@@ -6,7 +6,6 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-import soap.cibertec.entidad.DocenteBean;
 import soap.cibertec.entidad.TipoMedicamentoBean;
 import soap.cibertec.interfaces.TipoMedicamentoDAO;
 import utils.MysqlDBConexion;

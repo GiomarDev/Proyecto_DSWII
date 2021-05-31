@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-import soap.cibertec.entidad.DistritoBean;
+
 import soap.cibertec.entidad.PaisBean;
 import soap.cibertec.interfaces.PaisDAO;
 import utils.MysqlDBConexion;

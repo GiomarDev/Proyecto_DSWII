@@ -30,6 +30,15 @@ public class ServicioMedicamento {
 		return proveedorDAO.listAllProveedor();
 	}
 	
+	public List<MedicamentoBean> listarMedicamentos(){
+		return medicamentoDAO.listAllMedicamentos();
+	}
+	
+	public List<MedicamentoBean> consultaMedicamentoXNombre(String nombre){
+		return medicamentoDAO.listAllMedicamentosXNombre(nombre);
+	}
+	
+	
 	public int registrarMedicamento(MedicamentoBean bean) {
 		return medicamentoDAO.saveMedicamento(bean);
 	}

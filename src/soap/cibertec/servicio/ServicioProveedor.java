@@ -7,7 +7,7 @@ import soap.cibertec.dao.ProveedorDAOImpl;
 import soap.cibertec.entidad.PaisBean;
 import soap.cibertec.entidad.ProveedorBean;
 
-public class servicioProveedor {
+public class ServicioProveedor {
 	
 	PaisDAOImpl paisDAO=new PaisDAOImpl();
 	ProveedorDAOImpl proveedorDAO= new ProveedorDAOImpl();

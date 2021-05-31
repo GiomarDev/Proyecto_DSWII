@@ -6,7 +6,7 @@ public class MysqlDBConexion {
 		Connection cn=null;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			cn=DriverManager.getConnection("jdbc:mysql://localhost/instituto_2019_22?serverTimezone=UTC","root","mysql");
+			cn=DriverManager.getConnection("jdbc:mysql://localhost/bd_farmacia_servicio?serverTimezone=UTC","root","root");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -173,7 +173,7 @@ public class ProveedorDAOImpl implements ProveedorDAO {
 	}
 
 	@Override
-	public List<ProveedorBean> listAllProveedor(String nombre) {
+	public List<ProveedorBean> listAllProveedorxNombre(String nombre) {
 		List<ProveedorBean> lista=new ArrayList<ProveedorBean>();
 		ProveedorBean bean=null;
 		Connection cn=null;
@@ -181,7 +181,7 @@ public class ProveedorDAOImpl implements ProveedorDAO {
 		ResultSet rs=null;
 		try {
 			cn=MysqlDBConexion.getConexion();
-			String sql="call SP_findProveedor(?)";
+			String sql="call SP_findProveedorxNombre(?)";
 			cstm=cn.prepareCall(sql);
 			cstm.setString(1, nombre);
 			rs=cstm.executeQuery();

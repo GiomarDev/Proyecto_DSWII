@@ -11,6 +11,6 @@ public interface ProveedorDAO {
 	public int deleteProveedor(int codigo);
 	public ProveedorBean findProveedor(int codigo);
 	public List<ProveedorBean> listAllProveedor();
-	public List<ProveedorBean> listAllProveedor(String nombre);
+	public List<ProveedorBean> listAllProveedorxNombre(String nombre);
 
 }

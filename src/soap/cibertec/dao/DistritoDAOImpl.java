@@ -9,7 +9,6 @@ import soap.cibertec.interfaces.DistritoDAO;
 import utils.MysqlDBConexion;
 public class DistritoDAOImpl implements DistritoDAO{
 
-	@Override
 	public List<DistritoBean> listAllDistritos() {
 		List<DistritoBean> lista=new ArrayList<DistritoBean>();
 		DistritoBean bean=null;

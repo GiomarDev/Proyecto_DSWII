@@ -8,7 +8,6 @@ import soap.cibertec.entidad.DocenteBean;
 import soap.cibertec.interfaces.DocenteDAO;
 import utils.MysqlDBConexion;
 public class DocenteDAOImpl implements DocenteDAO{
-	@Override
 	public int saveDocente(DocenteBean bean){
 		int estado=-1;
 		Connection cn=null;
@@ -39,7 +38,6 @@ public class DocenteDAOImpl implements DocenteDAO{
 		}
 		return estado;
 	}
-	@Override
 	public int updateDocente(DocenteBean bean) {
 		int estado=-1;
 		Connection cn=null;
@@ -71,7 +69,6 @@ public class DocenteDAOImpl implements DocenteDAO{
 		}
 		return estado;
 	}
-	@Override
 	public int deleteDocente(int codigo) {
 		int estado=-1;
 		Connection cn=null;
@@ -95,7 +92,6 @@ public class DocenteDAOImpl implements DocenteDAO{
 		}
 		return estado;
 	}
-	@Override
 	public DocenteBean findDocente(int codigo) {
 		DocenteBean bean=null;
 		Connection cn=null;
@@ -133,7 +129,6 @@ public class DocenteDAOImpl implements DocenteDAO{
 		}
 		return bean;
 	}	
-	@Override
 	public List<DocenteBean> listAllDocentes(){
 		List<DocenteBean> lista=new ArrayList<DocenteBean>();
 		DocenteBean bean=null;
@@ -172,7 +167,6 @@ public class DocenteDAOImpl implements DocenteDAO{
 		}
 		return lista;
 	}
-	@Override
 	public List<DocenteBean> listAllDocentesXSexo(String sexo) {
 		List<DocenteBean> lista=new ArrayList<DocenteBean>();
 		DocenteBean bean=null;
